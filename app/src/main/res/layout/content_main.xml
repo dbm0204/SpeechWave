@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+
+    <project.dbm0204.org.speechwave.WaveView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        app:mode="RECORDING"
+        android:background="#FFFFFF"
+        android:id="@+id/waveformView" />
+
+    <project.dbm0204.org.speechwave.WaveView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        app:mode="PLAYBACK"
+        app:waveformStrokeThickness="3"
+        app:waveformColor="#e5dc33"
+        app:waveformFillColor="#e93519"
+        android:background="#FFFFFF"
+        android:id="@+id/playbackWaveformView" />
+</LinearLayout>
